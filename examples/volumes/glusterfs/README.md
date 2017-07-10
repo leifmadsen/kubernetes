@@ -4,8 +4,8 @@
 
 There are couple of ways to use GlusterFS as a persistent data store in application pods.
 
-*) Static Provisioning of GlusterFS Volumes.
-*) Dynamic Provisioning of GlusterFS Volumes.
+* Static Provisioning of GlusterFS Volumes.
+* Dynamic Provisioning of GlusterFS Volumes.
 
 ### Static Provisioning
 
@@ -24,7 +24,7 @@ The example assumes that you have already set up a GlusterFS server cluster and 
 
 The first step is to create the GlusterFS endpoints definition in Kubernetes. Here is a snippet of [glusterfs-endpoints.json](glusterfs-endpoints.json):
 
-```
+```json
   "subsets": [
     {
       "addresses": [{ "ip": "10.240.106.152" }],
